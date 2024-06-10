@@ -1,8 +1,5 @@
 import { FaGithub, FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-
-
-
 export function ContactSection() {
     return (
         <>

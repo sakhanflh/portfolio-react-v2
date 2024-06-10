@@ -1,4 +1,4 @@
-import { SkillData } from "../../data/SkillData";
+import { DetailSkill } from "./DetailSkill";
 
 export default function MySkill() {
     return (
@@ -9,18 +9,8 @@ export default function MySkill() {
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veniam deserunt, quasi est modi aspernatur.</p>
                 </div>
 
-                <div className="flex flex-wrap gap-5 justify-center">
-                    {SkillData.map((skill, index) => (
-                        <div key={index} className="w-32 justify-center gap-2 rounded-2xl flex flex-col items-center p-5 bg-gradient-to- border-gradient2 border-2 hover:shadow-lg transition-all duration-200 hover:scale-105 hover:shadow-gradient2">
-                            <div className="">
-                                <img src={skill.image} alt="" className="" />
-                            </div>
-
-                            <div className="">
-                                <p>{skill.title}</p>
-                            </div>
-                        </div>
-                    ))}
+                <div className="w-full">
+                    <DetailSkill/>
                 </div>
 
             </div>

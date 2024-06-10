@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.hover-container {
+    position: relative;
+    transition: transform 0.3s, filter 0.3s;
+    overflow: hidden;
+}
+
+.hover-container:hover {
+    transform: scale(1.05);
+    z-index: 5;
+}
+
+.hidden-hover {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    text-align: center;
+    transform: translate(-50%, -50%) rotate(-20deg);
+    /* background-color: rgba(0, 0, 0, 0.9); */
+    border: 1px solid #C3C7D9 ;
+    background-color: #1B2838;
+    color: #C3C7D9;
+    padding: 10px;
+    z-index: 10;
+}
+
+.hover-container:hover .hidden-hover {
+    display: block;
+}
+
+.grid:hover .hover-container:not(:hover) {
+    filter: blur(2px);
+}

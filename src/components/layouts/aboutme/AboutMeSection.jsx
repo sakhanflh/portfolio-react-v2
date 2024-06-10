@@ -1,7 +1,7 @@
 export function AboutMeSection() {
     return (
         <>
-            <div className="w-full text-text flex flex-col gap-5 lg:gap-10">
+            <div className="w-full text-text flex flex-col gap-5 lg:gap-10 relative">
                 <div className="w-full flex flex-col items-center">
                     <p className="text-2xl lg:text-3xl font-medium">About <span className="text-hover">Me</span></p>
                     <h1 className="text-sm lg:text-base">My short personal bio, get to know more about me</h1>

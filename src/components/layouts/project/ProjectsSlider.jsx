@@ -13,27 +13,31 @@ import { ProjectsCard } from './ProjectsCard';
 export function ProjectsSlider() {
     return (
         <>
-        <div>
-            <Swiper
-                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                spaceBetween={50}
-                slidesPerView={1}
-                autoplay={{ delay: 2000 }}
-                loop={true}
-                pagination={{ clickable: true }}
-            >
-                {ProjectsData.map(project => (
-                    <SwiperSlide key={project.id} >
-                        <ProjectsCard
-                        title={project.title}
-                        desc={project.desc}
-                        image={project.image}
-                        url={project.url}
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
-        </div>
+            <div className='bg-red-500'>
+                <Swiper
+                    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                    spaceBetween={50}
+                    slidesPerView={1}
+                    autoplay={{
+                        delay: 2000,
+                        disableOnInteraction: false,
+                    }}
+                    // loop={true}
+                    pagination={{ clickable: true }}
+                >
+                    {ProjectsData.map((project, index) => (
+                        <SwiperSlide key={index} >
+                            <ProjectsCard
+                                title={project.title}
+                                desc={project.desc}
+                                image={project.image}
+                                url={project.url}
+                                id={project.id}
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+            </div>
         </>
     )
 }
