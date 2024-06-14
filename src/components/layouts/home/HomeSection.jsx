@@ -6,6 +6,9 @@ export function HomeSection() {
     return (
         <>
             <div className="w-full justify-between gap-8 lg:gap-0 items-center flex-col-reverse lg:flex-row flex bg-background-color">
+                <div>
+                    <dot-grid/>
+                </div>
                 <div className="lg:w-[55%] flex flex-col gap-5 lg:gap-10">
                     <div className="">
                         <p className="text-lg lg:text-2xl text-text">Hello World, <span className="text-hover">I'm</span></p>

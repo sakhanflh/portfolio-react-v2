@@ -1,4 +1,5 @@
 import { ProjectsData } from "../components/data/ProjectsData";
+import { Footer } from "../components/fragments/Footer";
 import { Header } from "../components/fragments/Header";
 import { HeaderM } from "../components/fragments/HeaderM";
 import { ProjectsCard } from "../components/layouts/project/ProjectsCard";
@@ -22,6 +23,7 @@ export default function ProjectsPage() {
                     ))}
                 </div>
             </div>
+            <Footer/>
         </>
     )
 }

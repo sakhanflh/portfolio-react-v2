@@ -43,7 +43,7 @@ export function ProjectsPreview({ onClose, id }) {
                         <FaTimes />
                     </button>
 
-                    <div className="max-w-[30rem] flex flex-col gap-5">
+                    <div className="max-w-[28rem] flex flex-col gap-5">
                         <div>
                             <h2 className="text-xl font-semibold">{projectRev.title}</h2>
                         </div>
@@ -51,7 +51,7 @@ export function ProjectsPreview({ onClose, id }) {
                             <img src={projectRev.image} alt="" className="w-full h-full " />
                         </div>
 
-                        <div className="flex gap-3">
+                        <div className="flex flex-wrap gap-3">
                             {projectRev.tech.map(tech => (
                                 <div className="flex items-center gap-1  px-2 rounded-md bg-util" >
                                     <p key={tech.id} className="text-white ">{tech.title}</p>

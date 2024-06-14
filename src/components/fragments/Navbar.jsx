@@ -4,6 +4,7 @@ import { HoverIcon } from "../../assets/HoverIcon";
 export function Navbar() {
     return (
         <>
+        <div className="max-w-[150rem] overflow-x-hidden">
             <div className="hidden w-full h-16 px-[5%] lg:flex items-center justify-between font-jost">
                 <div className="flex w-12">
                     {/* <img src="/img/Senech-white.png" alt="" className="w-full h-full object-cover" /> */}
@@ -30,6 +31,7 @@ export function Navbar() {
                     <li className="text-text text-sm hover:text-hover font-semibold">Contact</li>
                 </ul>
             </div>
+        </div>
         </>
     )
 }

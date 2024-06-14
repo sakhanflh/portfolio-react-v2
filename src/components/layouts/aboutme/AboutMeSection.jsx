@@ -20,15 +20,15 @@ export function AboutMeSection() {
                 </div>
 
                 <div className="w-full flex flex-col-reverse lg:flex-row lg:justify-between">
-                    <div className="lg:w-[65%] lg:h-96 justify-center bg-util flex flex-col lg:flex-col gap-5 rounded-3xl p-5">
-                        <div className="p-5 py-3 flex flex-col gap-1 border rounded-2xl lg:justify-center bg-util">
+                    <div className="lg:w-[65%] lg:h-96 justify-center bg-gradient-to-bl from-util to-gray-900 flex flex-col lg:flex-col gap-5 rounded-3xl p-5">
+                        <div className="p-5 py-3 flex flex-col gap-1 border rounded-2xl lg:justify-center bg-gradient-to-bl from-util to-gray-900">
                             <h1 className="font-medium lg:text-xl text-span">Senior High School</h1>
                             <p className="text-sm lg:text-base">SMA Negeri 9 Depok</p>
                             <p className="text-sm lg:text-base">Cinere, Depok</p>
                             <p className="text-sm lg:text-base">IPS</p>
                             <p className="text-sm lg:text-base">2018-2021</p>
                         </div>
-                        <div className="p-5 py-3 flex flex-col gap-1 border rounded-2xl lg:justify-center bg-util">
+                        <div className="p-5 py-3 flex flex-col gap-1 border rounded-2xl lg:justify-center bg-gradient-to-bl from-util to-gray-900">
                             <h1 className="font-medium lg:text-xl text-span">College Student</h1>
                             <p className="text-sm lg:text-base">Unindra University</p>
                             <p className="text-sm lg:text-base">Ps. Rebo, Jakarta Timur</p>
@@ -37,7 +37,7 @@ export function AboutMeSection() {
                         </div>
                     </div>
 
-                    <div className="lg:w-[30%] w-full justify-between lg:justify-normal flex lg:h-96 lg:bg-util p-3 rounded-3xl overflow-hidden">
+                    <div className="lg:w-[30%] w-full justify-between lg:justify-normal flex lg:h-96 lg:bg-gradient-to-bl from-util to-gray-900 p-3 rounded-3xl overflow-hidden">
                         <div className="w-[65%] lg:w-full">
                             <img src="/img/sakha3.jpg" alt="" className="w-full h-64 lg:h-full object-cover rounded-2xl" />
                         </div>

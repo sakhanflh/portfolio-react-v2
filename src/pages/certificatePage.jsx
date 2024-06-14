@@ -7,7 +7,7 @@ export default function CertificatePage() {
             <Header/>
             <HeaderM/>
             <div>
-
+                
             </div>
         </>
     )
