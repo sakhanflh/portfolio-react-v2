@@ -1,7 +1,7 @@
 import { FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiExpress, SiMongodb } from "react-icons/si";
+import { SiExpress, SiMongodb, SiNodedotjs } from "react-icons/si";
 
 
 
@@ -123,6 +123,11 @@ export const ProjectsData = [
                 "id": 4,
                 "title": "MongoDB",
                 "icon": <SiMongodb className="text-green-600"/>,
+            },
+            {
+                "id": 5,
+                "title": "Node JS",
+                "icon": <SiNodedotjs className="text-green-600"/>,
             }
         ],
         "image": "/img/Macbook-Air-buildong-pi.vercel.app.png",
