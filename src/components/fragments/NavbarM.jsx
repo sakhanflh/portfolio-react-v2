@@ -20,10 +20,6 @@ export function NavbarM({ onShowNavbar }) {
                     <Link to={'/certificates'} className={`w-full hover:bg-util h-[25%] items-center flex px-5 ${onShowNavbar ? 'visible' : 'hidden'}`}>
                         <li className="text-text text-sm hover:text-hover font-semibold">Certificates</li>
                     </Link>
-
-                    <Link className={`w-full hover:bg-util h-[25%] items-center flex px-5 ${onShowNavbar ? 'visible' : 'hidden'}`}>
-                        <li className="text-text text-sm hover:text-hover font-semibold">Contact</li>
-                    </Link>
                 </ul>
             </div>
         </>

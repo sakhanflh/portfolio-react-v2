@@ -11,7 +11,9 @@ import { Footer } from "../components/fragments/Footer";
 
 
 export default function Home() {
-    // const tech = ProjectsData.map(prod => prod.tech)
+    const moreProjects = () => {
+        window.location.href = '/#/projects'
+    }
     return (
         <>
             <div className="bg-background-color">
@@ -38,8 +40,11 @@ export default function Home() {
                         {/* My Skill Section End */}
 
                         {/* Projects Section */}
-                        <div className="w-full flex flex-col text-text gap-5 lg:gap-10 px-[5%]">
-                            <div className="w-full flex items-center flex-col">
+                        <div className="w-full flex flex-col text-text gap-5 lg:gap-10 px-[5%] h-[80rem] lg:h-max overflow-hidden relative">
+                            <div className="absolute bottom-0 bg-gradient-to-t from-util to-transparent  w-full left-0 lg:hidden flex justify-center items-center h-40" onClick={moreProjects}>
+                                <p className="text-xl py-3 px-5 rounded-xl bg-gradient2 text-white">View More</p>
+                            </div>
+                            <div className="w-full flex items-center flex-col relative">
                                 <h1 className="text-3xl font-medium">Web <span className="text-hover">Projects</span></h1>
                                 <p className="">This is my <span className="">portfolio website</span></p>
                             </div>
@@ -60,7 +65,7 @@ export default function Home() {
                         {/* Projects Section End */}
 
                         {/* Contact Section */}
-                        <div className="px-[5%]">
+                        <div className="px-[5%]" id="contact">
                             <ContactSection />
                         </div>
                         {/* Contact Section End */}

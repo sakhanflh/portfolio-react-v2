@@ -7,14 +7,14 @@ import { SiGmail } from "react-icons/si";
 export function ContactSection() {
     const [state, handleSubmit] = useForm("xgegwpeb");
     if (state.succeeded) {
-        window.location.href='/#/sumbit'
+        window.location.href = '/#/sumbit'
     }
     return (
         <>
             <div className="w-full flex flex-col gap-10 font-jost text-text">
                 <div className="w-full flex flex-col items-center">
                     <h1 className="text-3xl font-medium">Contact <span className="text-hover">Me</span></h1>
-                    <p className="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, odit.</p>
+                    <p className="text-center">I'd love to hear from you! Whether you have a project in mind, need more information about my services, or just want to say hello, feel free to get in touch. Here are a few ways you can reach me.</p>
                 </div>
 
                 <div className="flex lg:justify-between flex-col lg:flex-row gap-10 lg:gap-0 ">

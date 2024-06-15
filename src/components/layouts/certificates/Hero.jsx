@@ -35,8 +35,12 @@ export default function CertificatesSection() {
     }, []);
     return (
         <>
-            <div className="App" ref={containerRef}>
-                <div className="bg-background-color w-full font-jost text-text p-[5%] overflow-x-hidden flex flex-wrap gap-5 lg:gap-10 justify-center  pt-20">
+            <div className="font-jost text-text pt-20" ref={containerRef}>
+                <div className="flex flex-col lg:gap-3 px-[5%]">
+                    <h1 className="text-xl lg:text-3xl font-medium">My <span className="text-hover">Certificates</span></h1>
+                    <p className="text-lg">Below is the certificate that I have received</p>
+                </div>
+                <div className="bg-background-color w-full font-jost text-text p-[5%] overflow-x-hidden flex flex-wrap gap-5 lg:gap-10 justify-center">
                     {CertificatesData.map((image, index) => (
                         <CertificateCard
                             key={image.id}

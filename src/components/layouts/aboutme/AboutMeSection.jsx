@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import { EducationData } from "../../data/EducationData";
+
 export function AboutMeSection() {
     return (
         <>
@@ -15,35 +18,47 @@ export function AboutMeSection() {
                         </div>
                     </div>
                     <div className="lg:w-[50%] flex justify-center">
-                        <p className="lg:text-lg text-center lg:text-start">Hello, my name is <span className="text-hover">Sakha</span> Naufal Huda. I study at <span className="text-hover">Indraprasta PGRI</span> university, with an educational background in the <span className="text-hover">IT</span> field and practical experience through previous projects, I have expertise in designing, developing and managing innovative websites.</p>
+                        <p className="lg:text-lg text-justify lg:text-start">Hello, my name is <span className="text-hover">Sakha</span> Naufal Huda. I study at <span className="text-hover">Indraprasta PGRI</span> university, with an educational background in the <span className="text-hover">IT</span> field and practical experience through previous projects, I have expertise in designing, developing and managing innovative websites.</p>
                     </div>
                 </div>
 
-                <div className="w-full flex flex-col-reverse lg:flex-row lg:justify-between">
-                    <div className="lg:w-[65%] lg:h-96 justify-center bg-gradient-to-bl from-util to-gray-900 flex flex-col lg:flex-col gap-5 rounded-3xl p-5">
-                        <div className="p-5 py-3 flex flex-col gap-1 border rounded-2xl lg:justify-center bg-gradient-to-bl from-util to-gray-900">
-                            <h1 className="font-medium lg:text-xl text-span">Senior High School</h1>
-                            <p className="text-sm lg:text-base">SMA Negeri 9 Depok</p>
-                            <p className="text-sm lg:text-base">Cinere, Depok</p>
-                            <p className="text-sm lg:text-base">IPS</p>
-                            <p className="text-sm lg:text-base">2018-2021</p>
+                <div className="bg-gradient-to-bl from-util to-gray-900 rounded-3xl p-5 w-full flex flex-col gap-5">
+                    <div className="w-full flex flex-col-reverse lg:flex-row lg:justify-center gap-8">
+                        <div className="lg:w-[50%] lg:h-96 justify-center flex flex-col lg:flex-col gap-5 ">
+                            <div className="flex flex-col gap-5 lg:gap-10 relative">
+                                {EducationData.map((data, index) => (
+                                    <div key={index} className="flex gap-10 z-20 w-full lg:w-[75%] relative">
+                                        <aside className="w-16 lg:w-20">
+                                            <div className="w-full rounded-full box-border overflow-hidden items-center justify-center flex border border-util bg-white p-3">
+                                                <img src={data.image} alt="" className="object-cover" />
+                                            </div>
+                                        </aside>
+                                        <article className="">
+                                            <p className="opacity-80 text-sm">{data.date}</p>
+                                            <p className="text-sm">{data.as}</p>
+                                            <h1 className="text-lg lg:text-2xl font-medium">{data.title}</h1>
+                                            <p className="font-medium">{data.company}</p>
+                                            <p>{data.desc}</p>
+                                        </article>
+                                    </div>
+                                ))}
+                                <div className="absolute w-[3px] lg:w-1 h-24 z-10 bottom-[80px] lg:bottom-[90px] left-[30px] lg:left-[37px] opacity-50">
+                                    <img src="/line.svg" alt="" className="object-cover w-full h-full" />
+                                </div>
+                            </div>
                         </div>
-                        <div className="p-5 py-3 flex flex-col gap-1 border rounded-2xl lg:justify-center bg-gradient-to-bl from-util to-gray-900">
-                            <h1 className="font-medium lg:text-xl text-span">College Student</h1>
-                            <p className="text-sm lg:text-base">Unindra University</p>
-                            <p className="text-sm lg:text-base">Ps. Rebo, Jakarta Timur</p>
-                            <p className="text-sm lg:text-base">Informatics Engineering</p>
-                            <p className="text-sm lg:text-base">2021-2025</p>
+
+                        <div className="lg:w-[30%] w-full justify-between lg:justify-normal flex lg:h-96 lg:bg-gradient-to-bl from-util to-gray-900 p-3 rounded-3xl overflow-hidden shadow-xl">
+                            <div className="w-full">
+                                <img src="/img/sakha3.jpg" alt="" className="w-full h-64 lg:h-full object-cover rounded-2xl" />
+                            </div>
+                            
                         </div>
                     </div>
-
-                    <div className="lg:w-[30%] w-full justify-between lg:justify-normal flex lg:h-96 lg:bg-gradient-to-bl from-util to-gray-900 p-3 rounded-3xl overflow-hidden">
-                        <div className="w-[65%] lg:w-full">
-                            <img src="/img/sakha3.jpg" alt="" className="w-full h-64 lg:h-full object-cover rounded-2xl" />
-                        </div>
-                        <div className="w-[30%] lg:hidden">
-                            <img src="/img/sakha.jpg" alt="" className="w-full h-64 object-cover object-[-60px] md:object-center rounded-2xl"/>
-                        </div>
+                    <div className=" flex justify-center">
+                        <Link to={'/aboutme'} className="py-3 px-10 bg-span rounded-xl font-medium text-lg hover:scale-90 transition-all duration-300 text-white">
+                            <button>More</button>
+                        </Link>
                     </div>
                 </div>
             </div>

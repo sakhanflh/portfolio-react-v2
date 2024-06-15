@@ -12,7 +12,7 @@ export function CertificateCard({ src, alt, isSelected, onSelect, isOpen, onOpen
     };
     return (
         <>
-            <div className="relative w-[80%] lg:w-[30%]">
+            <div className="relative w-[80%] lg:w-[40%]">
                 <img src={src} alt={alt} className="cursor-pointer" onClick={handleImageClick} />
                 {isSelected && (
                     <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white">

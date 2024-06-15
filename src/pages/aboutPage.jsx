@@ -3,6 +3,7 @@ import { ExperienceData } from "../components/data/ExperienceData";
 import { Footer } from "../components/fragments/Footer";
 import { Header } from "../components/fragments/Header";
 import { HeaderM } from "../components/fragments/HeaderM";
+import { DetailSkill } from "../components/layouts/myskill/DetailSkill";
 
 export default function AboutMePage() {
     return (
@@ -22,6 +23,10 @@ export default function AboutMePage() {
                                     <img src="/img/Sakha2.jpg" alt="" className="w-full h-full object-cover" />
                                 </div>
                             </aside>
+                        </div>
+
+                        <div>
+                            <DetailSkill/>
                         </div>
 
                         <div className="flex flex-col gap-5 lg:gap-10 relative">
