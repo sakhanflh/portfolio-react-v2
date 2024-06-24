@@ -11,8 +11,4 @@ export const CertificatesData = [
         id: 3,
         image: '/img/sertifikat-fe.png'
     },
-    {
-        id: 4,
-        image: '/img/sertifikat-fe.png'
-    }
 ]

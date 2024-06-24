@@ -9,6 +9,16 @@ export function ContactSection() {
     if (state.succeeded) {
         window.location.href = '/#/sumbit'
     }
+
+    const handleGithub = () => {
+        window.location.href = 'https://github.com/sakhanflh'
+    }
+    const handleInstagram = () => {
+        window.location.href = 'https://www.instagram.com/sakhanflh?igsh=MWx0a2pucWZ6b2E4eg=='
+    }
+    const handleEmail = () => {
+        window.location.href = 'mailto:sakhanaufal2@gmail.com'
+    }
     return (
         <>
             <div className="w-full flex flex-col gap-10 font-jost text-text">
@@ -20,17 +30,17 @@ export function ContactSection() {
                 <div className="flex lg:justify-between flex-col lg:flex-row gap-10 lg:gap-0 ">
                     <div className="lg:w-[35%] w-full">
                         <div className="w-full flex flex-col gap-5">
-                            <div className="flex items-center gap-1 bg-gradient-to-l from-util to-gray-900 py-3 px-5 rounded-xl">
+                            <div className="flex items-center gap-1 bg-gradient-to-l from-util to-gray-900 py-3 px-5 rounded-xl cursor-pointer" onClick={handleInstagram}>
                                 <FaInstagram className="text-xl" />
                                 <p className="text-lg">sakhanflh_</p>
                             </div>
 
-                            <div className="flex items-center gap-1 bg-gradient-to-l from-util to-gray-900 py-3 px-5 rounded-xl">
+                            <div className="flex items-center gap-1 bg-gradient-to-l from-util to-gray-900 py-3 px-5 rounded-xl cursor-pointer" onClick={handleEmail}>
                                 <SiGmail className="text-xl" />
                                 <p className="text-lg">sakhanaufal2@gmail.com</p>
                             </div>
 
-                            <div className="flex items-center gap-1 bg-gradient-to-l from-util to-gray-900 py-3 px-5 rounded-xl">
+                            <div className="flex items-center gap-1 bg-gradient-to-l from-util to-gray-900 py-3 px-5 rounded-xl cursor-pointer" onClick={handleGithub}>
                                 <FaGithub className="text-xl" />
                                 <p className="text-lg">sakhanflh</p>
                             </div>

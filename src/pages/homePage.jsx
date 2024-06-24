@@ -3,14 +3,17 @@ import { ProjectsCard } from "../components/layouts/project/ProjectsCard";
 import { ProjectsData } from "../components/data/ProjectsData";
 import MySkill from "../components/layouts/myskill/MySkillSection";
 import { HeaderM } from "../components/fragments/HeaderM";
-import { ProjectsSlider } from "../components/layouts/project/ProjectsSlider";
 import { AboutMeSection } from "../components/layouts/aboutme/AboutMeSection";
 import { ContactSection } from "../components/layouts/contact/ContactSection";
 import { HomeSection } from "../components/layouts/home/HomeSection";
 import { Footer } from "../components/fragments/Footer";
+import { useEffect } from "react";
 
 
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    })
     const moreProjects = () => {
         window.location.href = '/#/projects'
     }

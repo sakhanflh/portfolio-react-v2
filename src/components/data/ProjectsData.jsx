@@ -132,7 +132,7 @@ export const ProjectsData = [
         ],
         "image": "/img/Macbook-Air-buildong-pi.vercel.app.png",
         "url": "https://buildong-pi.vercel.app/",
-        "desc": "Buildong is a website about E Commerce and also construction services, which is my collaborative task, using Mern (ManggoDB, ExpressJS, React, NodeJS).",
+        "desc": "Buildong is a website about E Commerce and also construction services, which is my collaborative task, using Mern (MonggoDB, ExpressJS, React, NodeJS).",
         "preview": 5,
         "repo": "https://github.com/sakhanflh/buildong.git",
     },
