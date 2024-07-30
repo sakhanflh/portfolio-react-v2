@@ -77,8 +77,8 @@ export function ContactSection() {
                                 <ValidationError prefix="Message" field="message" errors={state.errors} />
                             </div>
                             {/* Message End */}
-                            <button type="submit" disabled={state.submitting} className="w-full lg:px-52 hover:scale-95 hover:transition-all hover:duration-300 hover:ease-in-out">
-                                <p className="bg-span font-semibold text-lg text-white  rounded-lg p-3">Submit</p>
+                            <button type="submit" disabled={state.submitting} className="w-full lg:px-52 bg-span font-semibold text-lg text-white hover:scale-95 hover:transition-all hover:duration-300 hover:ease-in-out rounded-lg p-3">
+                                Submit
                             </button>
                         </form>
                     </div>

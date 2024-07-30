@@ -136,4 +136,25 @@ export const ProjectsData = [
         "preview": 5,
         "repo": "https://github.com/sakhanflh/buildong.git",
     },
+    {
+        "id": 6,
+        "title": "Senech News",
+        "tech": [
+            {
+                "id": 1,
+                "title": "React",
+                "icon": <FaReact className="text-hover"/>,
+            },
+            {
+                "id": 2,
+                "title": "Tailwind",
+                "icon": <RiTailwindCssFill className="text-hover"/>,
+            },
+        ],
+        "image": "/img/Macbook-Air-senech-news.vercel.app.png",
+        "url": "https://senech-news.vercel.app/",
+        "desc": "This website is a news website, which is created using API from CNN and Antara",
+        "preview": 6,
+        "repo": "https://github.com/sakhanflh/senech-news",
+    },
 ]
