@@ -510,7 +510,7 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    background: url('/img/Sakha2.jpg') no-repeat center center;
+    background: url('/img/sakha.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
   }
