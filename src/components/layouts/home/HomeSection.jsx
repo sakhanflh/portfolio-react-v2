@@ -52,12 +52,11 @@ export function HomeSection() {
                 </div>
 
                 <div className="w-full lg:w-[45%] flex justify-center">
-                    <ProfileCard/>
-                    {/* <div className="w-52 h-52 lg:w-80 lg:h-80 border-2 lg:border-4 border-zinc-400 shadow-lg lg:shadow-2xl shadow-span lg:shadow-span rounded-full overflow-hidden ">
+                    {/* <ProfileCard/> */}
+                    <div className="w-52 h-52 lg:w-80 lg:h-80 border-2 lg:border-4 border-zinc-400 shadow-lg lg:shadow-2xl shadow-span lg:shadow-span rounded-full overflow-hidden ">
                         <img src="/img/Sakha2.jpg" alt="" className="w-full h-full object-cover" />
-                    </div> */}
+                    </div>
                 </div>
-
             </div>
         </>
     )

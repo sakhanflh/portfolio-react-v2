@@ -510,7 +510,6 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    /* background: linear-gradient(45deg, rgb(4, 159, 187) 0%, rgb(80, 246, 255) 100%); */
     background: url('/img/Sakha2.jpg') no-repeat center center;
     background-size: cover;
     position: relative;
@@ -545,8 +544,6 @@
     top: 40px;
     left: 0;
     background: rgba(255, 255, 255, 0);
-    /* background: red; */
-
     height: 15px;
     width: 15px;
     border-top-left-radius: 15px;
@@ -596,10 +593,10 @@
   .card .bottom-section .title {
     display: block;
     font-size: 17px;
-    font-weight: bolder;
+    font-weight: 500;
     color: white;
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
   
   .card .bottom-section .row {
@@ -629,3 +626,83 @@
     border-right: 1px solid rgba(255, 255, 255, 0.126);
   }
 /* Card Profile End */
+
+
+/* Contact */
+.container2 {
+    width: 5em;
+    height: 5em;
+    position: relative;
+  }
+  
+  .button2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid #090909;
+    background-color: transparent;
+    background-image: linear-gradient(145deg, #171717, #444245);
+    box-sizing: border-box;
+    box-shadow: inset 2px 2px 0 #7d7c7e, inset -2px -2px 0px #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container2 input {
+    display: none;
+  }
+  
+  .button2::before {
+    position: absolute;
+    content: "";
+    width: 7.25em;
+    height: 7.25em;
+    border-radius: inherit;
+    background-color: transparent;
+    background-image: linear-gradient(145deg, #262626, #606060);
+    z-index: -1;
+    box-shadow: 11px 11px 22px #141414, -11px -11px 22px #525252;
+  }
+  
+  .button2 .icon2 {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+  }
+  
+  .button2 .icon2 svg {
+    height: 100%;
+    width: 100%;
+    fill: #a5a5a5;
+  }
+  
+  .container2 input:checked + .button2 {
+    box-shadow: inset -2px -2px 0 #5e5e5e, inset 2px 2px 0 #1c1c1c;
+    border: 4px solid rgba(77, 124, 255, 0.281);
+    animation: animeBorder 0.3s linear alternate-reverse infinite;
+  }
+  
+  .container2 input:checked + .button2 .icon2 svg {
+    fill: rgb(77, 124, 255);
+    animation: animeFill 0.3s linear alternate-reverse infinite;
+  }
+  
+  @keyframes animeFill {
+    to {
+      fill: rgba(77, 124, 255, 0.642);
+    }
+  }
+  
+  @keyframes animeBorder {
+    to {
+      border-color: rgba(77, 124, 255, 0.137);
+    }
+  }
+  
+/* Contact End */
+
+/* Card Contact */
+.clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+/* Card Contact End */

@@ -1,0 +1,90 @@
+.lightButton {
+    position: relative;
+}
+
+.bt {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+    outline: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonHolder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+    background-color: var(--button-bg);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-weight: 700;
+    transition: 300ms;
+    outline: var(--text-color) 2px solid;
+    outline-offset: 20px;
+}
+
+.buttonHolder svg {
+    height: 50px;
+    fill: var(--text-color);
+    transition: 300ms;
+}
+
+.lightHolder {
+    position: absolute;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lightHolder .dot {
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    background-color: var(--button-bg);
+    border-radius: 10px;
+    z-index: 2;
+}
+
+.lightHolder .light {
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    clip-path: polygon(50% 0%, 25% 100%, 75% 100%);
+    background: transparent;
+}
+
+.active .buttonHolder svg {
+    fill: var(--hover-color);
+}
+
+.active .buttonHolder {
+    color: var(--hover-color);
+    outline: var(--hover-color) 2px solid;
+    outline-offset: 2px;
+}
+
+.active .lightHolder .light {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      180deg,
+      var(--hover-color) 0%,
+      rgba(255, 255, 255, 0) 75%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+
+.inactiveIcon {
+    filter: grayscale(100%) brightness(0) invert(0); /* Ganti dengan filter sesuai kebutuhan */
+}
+

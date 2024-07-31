@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { EducationData } from "../../data/EducationData";
+import { ProfileCard } from "../../fragments/ProfileCard";
 
 export function AboutMeSection() {
     return (
@@ -48,11 +49,8 @@ export function AboutMeSection() {
                             </div>
                         </div>
 
-                        <div className="lg:w-[30%] w-full justify-between lg:justify-normal flex lg:h-96 lg:bg-gradient-to-bl from-util to-gray-900 p-3 rounded-3xl overflow-hidden shadow-xl">
-                            <div className="w-full">
-                                <img src="/img/sakha3.jpg" alt="" className="w-full h-64 lg:h-full object-cover rounded-2xl" />
-                            </div>
-                            
+                        <div className="lg:w-[30%] w-full justify-center  lg:justify-normal flex">
+                            <ProfileCard/>
                         </div>
                     </div>
                     <div className=" flex justify-center">
