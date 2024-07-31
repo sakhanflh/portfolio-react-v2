@@ -22,7 +22,7 @@ export function Contact() {
                     color='#0a0a0a'
                     textColor='#0f0f0f'
                     hoverColor='#FF3300'
-                    icon={'src/assets/gmail-svgrepo-com.svg'}
+                    icon={'/gmail-svgrepo-com.svg'}
                     label="Gmail"
                     isActive={isActive}
                 />
@@ -38,7 +38,7 @@ export function Contact() {
                     color='#0a0a0a'
                     textColor='#0f0f0f'
                     hoverColor='rgba(193, 53, 132)'
-                    icon={'src/assets/instagram-1-svgrepo-com.svg'}
+                    icon={'/instagram-1-svgrepo-com.svg'}
                     label="Instagram"
                     isActive={isActive}
                 />
