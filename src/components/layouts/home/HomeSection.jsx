@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import RunningText from "../aboutme/RunningText";
+import { ProfileCard } from "../../fragments/ProfileCard";
 export function HomeSection() {
     const texts = ['Frontend Developer']
     const handleGithub = () => {
@@ -51,9 +52,10 @@ export function HomeSection() {
                 </div>
 
                 <div className="w-full lg:w-[45%] flex justify-center">
-                    <div className="w-52 h-52 lg:w-80 lg:h-80 border-2 lg:border-4 border-zinc-400 shadow-lg lg:shadow-2xl shadow-span lg:shadow-span rounded-full overflow-hidden ">
+                    <ProfileCard/>
+                    {/* <div className="w-52 h-52 lg:w-80 lg:h-80 border-2 lg:border-4 border-zinc-400 shadow-lg lg:shadow-2xl shadow-span lg:shadow-span rounded-full overflow-hidden ">
                         <img src="/img/Sakha2.jpg" alt="" className="w-full h-full object-cover" />
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
