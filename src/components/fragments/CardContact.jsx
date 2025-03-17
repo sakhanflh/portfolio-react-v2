@@ -1,6 +1,5 @@
 import styles from '../style/LightButton.module.css'
-export function CardContact({ color, textColor, hoverColor, icon, label, isActive }) {
-
+export function CardContact({ color, textColor, hoverColor, icon, label, isActive}) {
     return (
         <div className={styles.lightButton}>
             <button

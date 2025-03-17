@@ -25,6 +25,7 @@ export function Contact() {
                     icon={'/gmail-svgrepo-com.svg'}
                     label="Gmail"
                     isActive={isActive}
+                    
                 />
                 <CardContact
                     color='#0a0a0a'
@@ -49,6 +50,7 @@ export function Contact() {
                     icon={<FaGithub size={45}/>}
                     label="Github"
                     isActive={isActive}
+                    link="https://github.com/sakhanflh"
                 />
             </div>
         </article>
