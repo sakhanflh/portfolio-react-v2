@@ -74,34 +74,9 @@ export const ProjectsData = [
         "preview": 3,
         "repo": "https://github.com/bryanberlandro/josha-coffe.git",
     },
+    
     {
         "id": 4,
-        "title": "Senech Construction",
-        "tech": [
-            {
-                "id": 1,
-                "title": "Html",
-                "icon": <FaHtml5 className="text-orange-600"/>,
-            },
-            {
-                "id": 2,
-                "title": "Css",
-                "icon": <FaCss3 className="text-hover"/>,
-            },
-            {
-                "id": 3,
-                "title": "JavaScript",
-                "icon": <IoLogoJavascript className="text-yellow-400"/>,
-            },
-        ],
-        "image": "/img/Macbook-Air-senech-construction.vercel.app.png",
-        "url": "https://senech-construction.vercel.app/",
-        "desc": "Senech Contruction is a website about construction created using Vanilla JavaScript, with a minimalist and responsive appearance.",
-        "preview": 4,
-        "repo": "https://github.com/sakhanflh/senech-construction.git",
-    },
-    {
-        "id": 5,
         "title": "Buildong",
         "tech": [
             {
@@ -137,7 +112,7 @@ export const ProjectsData = [
         "repo": "https://github.com/sakhanflh/buildong.git",
     },
     {
-        "id": 6,
+        "id": 5,
         "title": "Senech News",
         "tech": [
             {
