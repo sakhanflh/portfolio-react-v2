@@ -5,10 +5,6 @@ export const CertificatesData = [
     },
     {
         id: 2,
-        image: '/img/sertifikat-seminar-abcd.jpg'
-    },
-    {
-        id: 3,
         image: '/img/sertifikat-fe.png'
     },
 ]

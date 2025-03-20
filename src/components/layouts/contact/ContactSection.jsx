@@ -55,7 +55,7 @@ export function ContactSection() {
                     </div>
 
                     <div className="w-full xl:w-1/2">
-                        <form onSubmit={handleSubmit} className="flex flex-col xl:flex-wrap gap-2 xl:gap-5 lg:gap-5 w-full bg-gradient-to-bl from-util to-gray-900 p-5 rounded-xl justify-between">
+                        <form onSubmit={handleSubmit} className="flex flex-col xl:flex-row xl:flex-wrap gap-2 xl:gap-2 lg:gap-2 w-full bg-gradient-to-bl from-util to-gray-900 p-5 rounded-xl justify-between">
                             <h1 className="w-full text-2xl">Get in touch.</h1>
                             {/* Fullname */}
                             <div className="flex flex-col xl:w-[47%]">
